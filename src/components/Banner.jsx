@@ -3,13 +3,14 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/images/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
+import TrackVisibility from "react-on-screen";
 
 export default function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100 - Math.random() * 100);
-  // const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(1);
   const toRotate = [" a Web Developer", " a Web Designer", " a UI/UX Designer"];
   const period = 2000;
 
