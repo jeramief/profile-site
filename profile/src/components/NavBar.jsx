@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import logo from "/assets/images/logo.svg";
-import LinkedIn from "/assets/images/nav-icon1.svg";
-import Facebook from "/assets/images/nav-icon2.svg";
-import Instagram from "/assets/images/nav-icon3.svg";
+import logo from "../assets/images/logo.svg";
+import LinkedIn from "../assets/images/nav-icon1.svg";
+import Facebook from "../assets/images/nav-icon2.svg";
+import Instagram from "../assets/images/nav-icon3.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");

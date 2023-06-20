@@ -1,19 +1,20 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/images/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../../public/assets/images/header-img.svg";
 
 export default function Banner() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100 - Math.random() * 100);
+  // const [index, setIndex] = useState(1);
+  const toRotate = [" a Web Developer", " a Web Designer", " a UI/UX Designer"];
   const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
-      ticker();
+      tick();
     }, delta);
 
     return () => {
@@ -51,7 +52,7 @@ export default function Banner() {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm Jeramie`}
+              {`Hi I'm Jeramie,`}
               <span className="wrap">{text}</span>
             </h1>
             <p>
@@ -64,7 +65,7 @@ export default function Banner() {
               Let&#39;s connect <ArrowRightCircle size={25} />
             </button>
           </Col>
-          <Col>
+          <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="" />
           </Col>
         </Row>
