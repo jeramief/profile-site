@@ -85,7 +85,7 @@ export const NavBar = () => {
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Let’s Connect</span>
+                  <span>Let&lsquo;s Connect</span>
                 </button>
               </HashLink>
             </span>
