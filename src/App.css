@@ -110,7 +110,23 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+  width: 9%;
+}
+
+
+
+nav.navbar a.navbar-brand {
+  width: 15%;
+}
+
+.logo {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .logo {
+    width: 135%;
+  }
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -652,7 +668,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  width: 60%;
 }
 .footer p {
   font-weight: 400;

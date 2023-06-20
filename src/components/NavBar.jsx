@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/images/logo.svg";
-import LinkedIn from "../assets/images/nav-icon1.svg";
-import Facebook from "../assets/images/nav-icon2.svg";
-import Instagram from "../assets/images/nav-icon3.svg";
+import LinkedIn from "../assets/images/linkedin.svg";
+import GitHub from "../assets/images/github.svg";
+import Twitter from "../assets/images/twitter.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -34,7 +34,7 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
+            <img src={logo} className="logo" alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
@@ -73,14 +73,14 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#">
-                  <img src={LinkedIn} alt="" />
+                <a href="https://www.linkedin.com/in/jeramieforbes/">
+                  <img src={LinkedIn} alt="LinkedIn" />
                 </a>
-                <a href="#">
-                  <img src={Facebook} alt="" />
+                <a href="https://github.com/jeramief">
+                  <img src={GitHub} alt="" />
                 </a>
-                <a href="#">
-                  <img src={Instagram} alt="" />
+                <a href="https://twitter.com/forbes_jeramie">
+                  <img src={Twitter} alt="" />
                 </a>
               </div>
               <HashLink to="#connect">
