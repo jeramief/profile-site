@@ -81,7 +81,7 @@ export const Banner = () => {
                     Contact me for your next eye-catching, responsive,
                     accessible website!
                   </p>
-                  <button>
+                  <button onClick={() => console.log("connect")}>
                     Let&lsquo;s Connect <ArrowRightCircle size={25} />
                   </button>
                 </div>
