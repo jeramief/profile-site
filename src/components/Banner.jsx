@@ -67,7 +67,7 @@ export const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Judy`}{" "}
+                    {`Hi! I'm Jeramie,`}{" "}
                     <span
                       className="txt-rotate"
                       // eslint-disable-next-line react/no-unknown-property
