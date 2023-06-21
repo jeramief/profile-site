@@ -1,6 +1,6 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/images/project-img1.png";
+import shaystyles from "../assets/images/shaystyles.png";
 import projImg2 from "../assets/images/project-img2.png";
 import projImg3 from "../assets/images/project-img3.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
@@ -8,37 +8,105 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
-  const projects = [
+  const projects1 = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      link: "https://shaystyles.netlify.app/",
+      title: "Shay Styles Hair Salon",
+      description: "Responsive and accessible hair salon website",
+      imgUrl: shaystyles,
     },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
+  ];
+  const projects2 = [
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
     {
+      link: "https://jeramieforbes.netlify.app/",
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg2,
     },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
+  ];
+  const projects3 = [
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg1,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
     {
+      link: "https://github.com/jeramief",
       title: "Business Startup",
       description: "Design & Development",
       imgUrl: projImg3,
     },
     {
+      link: "https://jeramieforbes.netlify.app/",
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: shaystyles,
     },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg2,
+    // },
+    // {
+    //   title: "Business Startup",
+    //   description: "Design & Development",
+    //   imgUrl: projImg3,
+    // },
   ];
 
   return (
@@ -54,13 +122,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&#39;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.
-                  </p>
+
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -78,35 +140,45 @@ export const Projects = () => {
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
+                    // id="slideInUp"
+                    // className={
+                    //   isVisible ? "animate__animated animate__slideInUp" : ""
+                    // }
                     >
                       <Tab.Pane eventKey="first">
+                        {/* <p>
+                          These are some of the open source projects I&#39;ve
+                          contributed to{" "}
+                        </p> */}
                         <Row>
-                          {projects.map((project, index) => {
+                          {projects1.map((project, index) => {
+                            return <ProjectCard key={index[0]} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        {/* <p>
+                          These are some of the open source projects I&#39;ve
+                          contributed to{" "}
+                        </p> */}
+                        <Row>
+                          {projects2.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
-                      </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        {/* <p>
+                          These are some of the open source projects I&#39;ve
+                          contributed to{" "}
+                        </p> */}
+                        <Row>
+                          {projects3.map((project, index) => {
+                            return (
+                              <ProjectCard href="#" key={index} {...project} />
+                            );
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
