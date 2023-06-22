@@ -1,8 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import shaystyles from "../assets/images/shaystyles.png";
-import projImg2 from "../assets/images/project-img2.png";
-import projImg3 from "../assets/images/project-img3.png";
+import dreamtowers from "../assets/images/dreamtowers.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -12,101 +11,25 @@ export const Projects = () => {
     {
       link: "https://shaystyles.netlify.app/",
       title: "Shay Styles Hair Salon",
+      description: "Responsive and accessible Hair Salon website",
+      imgUrl: shaystyles,
+    },
+  ];
+  const projects2 = [
+    {
+      link: "https://jeramief.github.io/dreamtowers/#services",
+      title: "Dream Towers",
+      description: "Responsive and accessible Construction website",
+      imgUrl: dreamtowers,
+    },
+  ];
+  const projects3 = [
+    {
+      link: "https://shaystyles.netlify.app/",
+      title: "Shay Styles Hair Salon",
       description: "Responsive and accessible hair salon website",
       imgUrl: shaystyles,
     },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
-  ];
-  const projects2 = [
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    {
-      link: "https://jeramieforbes.netlify.app/",
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
-  ];
-  const projects3 = [
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg1,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    {
-      link: "https://github.com/jeramief",
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      link: "https://jeramieforbes.netlify.app/",
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: shaystyles,
-    },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg2,
-    // },
-    // {
-    //   title: "Business Startup",
-    //   description: "Design & Development",
-    //   imgUrl: projImg3,
-    // },
   ];
 
   return (
