@@ -2,6 +2,7 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import shaystyles from "../assets/images/shaystyles.png";
 import dreamtowers from "../assets/images/dreamtowers.png";
+import thegalli from "../assets/images/thegalli.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -9,17 +10,17 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects1 = [
     {
-      link: "https://shaystyles.netlify.app/",
-      title: "Shay Styles Hair Salon",
-      description: "Responsive and accessible Hair Salon website",
-      imgUrl: shaystyles,
+      link: "https://thegalli.netlify.app/",
+      title: "The Galli",
+      description: "Responsive and Accessible Restaurant Website",
+      imgUrl: thegalli,
     },
   ];
   const projects2 = [
     {
-      link: "https://jeramief.github.io/dreamtowers/#services",
+      link: "https://jeramief.github.io/dreamtowers/",
       title: "Dream Towers",
-      description: "Responsive and accessible Construction website",
+      description: "Responsive and Accessible Construction Website",
       imgUrl: dreamtowers,
     },
   ];
@@ -27,7 +28,7 @@ export const Projects = () => {
     {
       link: "https://shaystyles.netlify.app/",
       title: "Shay Styles Hair Salon",
-      description: "Responsive and accessible hair salon website",
+      description: "Responsive and Accessible Hair Salon Website",
       imgUrl: shaystyles,
     },
   ];
