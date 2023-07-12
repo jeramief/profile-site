@@ -4,6 +4,8 @@ import headerImg from "../assets/images/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { BrowserRouter as Router } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const Banner = () => {
   // const [loopNum, setLoopNum] = useState(0);
@@ -54,22 +56,23 @@ export const Banner = () => {
   // };
 
   return (
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    {/* {`Hi! I'm Jeramie,`}{" "} */}
-                    Hi! I&#39;m Jeramie, a Fullstack Software Engineer
-                    {/* <span
+    <Router>
+      <section className="banner" id="home">
+        <Container>
+          <Row className="aligh-items-center">
+            <Col xs={12} md={6} xl={7}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__fadeIn" : ""
+                    }
+                  >
+                    <span className="tagline">Welcome to my Portfolio</span>
+                    <h1>
+                      {/* {`Hi! I'm Jeramie,`}{" "} */}
+                      Hi! I&#39;m Jeramie, a Fullstack Software Engineer
+                      {/* <span
                       className="txt-rotate"
                       // eslint-disable-next-line react/no-unknown-property
                       dataPeriod="1000"
@@ -77,33 +80,39 @@ export const Banner = () => {
                     >
                       <span className="wrap">{text}</span>
                     </span> */}
-                  </h1>
-                  <p>
-                    Contact me for your next eye-catching, responsive,
-                    accessible website!
-                  </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let&lsquo;s Connect <ArrowRightCircle size={25} />
-                  </button>
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Img" />
-                </div>
-              )}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+                    </h1>
+                    <p>
+                      Contact me for your next eye-catching, responsive,
+                      accessible website!
+                    </p>
+
+                    <HashLink to="#connect">
+                      <button>
+                        <span>
+                          Let&lsquo;s Connect <ArrowRightCircle size={25} />
+                        </span>
+                      </button>
+                    </HashLink>
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+            <Col xs={12} md={6} xl={5}>
+              <TrackVisibility>
+                {({ isVisible }) => (
+                  <div
+                    className={
+                      isVisible ? "animate__animated animate__zoomIn" : ""
+                    }
+                  >
+                    <img src={headerImg} alt="Header Img" />
+                  </div>
+                )}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Router>
   );
 };

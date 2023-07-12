@@ -2,19 +2,19 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import shaystyles from "../assets/images/shaystyles.png";
 import dreamtowers from "../assets/images/dreamtowers.png";
-// import thegalli from "../assets/images/thegalli.png";
+import thegalli from "../assets/images/thegalli.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects1 = [
-    // {
-    //   link: "https://thegalli.netlify.app/",
-    //   title: "The Galli",
-    //   description: "Responsive and Accessible Restaurant Website",
-    //   imgUrl: thegalli,
-    // },
+    {
+      link: "https://thegalli.netlify.app/",
+      title: "The Galli",
+      description: "Responsive and Accessible Restaurant Website",
+      imgUrl: thegalli,
+    },
   ];
   const projects2 = [
     {
