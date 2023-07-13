@@ -3,12 +3,19 @@ import { ProjectCard } from "./ProjectCard";
 import shaystyles from "../assets/images/shaystyles.png";
 import dreamtowers from "../assets/images/dreamtowers.png";
 import thegalli from "../assets/images/thegalli.png";
+import mechnewton from "../assets/images/mechnewton.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects1 = [
+    {
+      link: "https://mechnewton.netlify.app/",
+      title: "MechNewton",
+      description: "Responsive and Accessible Auto Mechanic Website",
+      imgUrl: mechnewton,
+    },
     {
       link: "https://thegalli.netlify.app/",
       title: "The Galli",
