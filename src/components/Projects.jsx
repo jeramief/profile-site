@@ -14,25 +14,29 @@ export const Projects = () => {
     {
       link: "https://mechnewton.netlify.app/",
       title: "MechNewton",
-      description: "Responsive and Accessible Auto Mechanic Website",
+      description:
+        "Responsive and Accessible Auto Mechanic Website. Built in HTML, CSS, JavaScript.",
       imgUrl: mechnewton,
     },
     {
       link: "https://thegalli.netlify.app/",
       title: "The Galli",
-      description: "Responsive and Accessible Restaurant Website",
+      description:
+        "Responsive and Accessible Restaurant Website. Built in HTML, CSS, JavaScript.",
       imgUrl: thegalli,
     },
     {
       link: "https://jeramief.github.io/dreamtowers/",
       title: "Dream Towers",
-      description: "Responsive and Accessible Construction Website",
+      description:
+        "Responsive and Accessible Construction Website. Built in HTML, CSS, JavaScript.",
       imgUrl: dreamtowers,
     },
     {
       link: "https://shaystyles.netlify.app/",
       title: "Shay Styles Hair Salon",
-      description: "Responsive and Accessible Hair Salon Website",
+      description:
+        "Responsive and Accessible Hair Salon Website. Built in HTML, CSS, JavaScript.",
       imgUrl: shaystyles,
     },
     {
