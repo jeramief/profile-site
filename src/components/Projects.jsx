@@ -4,6 +4,7 @@ import shaystyles from "../assets/images/shaystyles.png";
 import dreamtowers from "../assets/images/dreamtowers.png";
 import thegalli from "../assets/images/thegalli.png";
 import mechnewton from "../assets/images/mechnewton.png";
+import airquality from "../assets/images/airquality.png";
 import colorSharp2 from "../assets/images/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -22,23 +23,28 @@ export const Projects = () => {
       description: "Responsive and Accessible Restaurant Website",
       imgUrl: thegalli,
     },
-  ];
-  const projects2 = [
     {
       link: "https://jeramief.github.io/dreamtowers/",
       title: "Dream Towers",
       description: "Responsive and Accessible Construction Website",
       imgUrl: dreamtowers,
     },
-  ];
-  const projects3 = [
     {
       link: "https://shaystyles.netlify.app/",
       title: "Shay Styles Hair Salon",
       description: "Responsive and Accessible Hair Salon Website",
       imgUrl: shaystyles,
     },
+    {
+      link: "https://checkairquality.netlify.app/",
+      title: "Air Quality Checker",
+      description:
+        "A website to check the air quality in different areas of the world. Built in React.js",
+      imgUrl: airquality,
+    },
   ];
+  const projects2 = [];
+  const projects3 = [];
 
   return (
     <section className="project" id="projects">
