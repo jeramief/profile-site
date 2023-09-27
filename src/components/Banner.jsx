@@ -71,7 +71,7 @@ export const Banner = () => {
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>
                       {/* {`Hi! I'm Jeramie,`}{" "} */}
-                      Hi! I&#39;m Jeramie, a Fullstack Software Engineer
+                      JERAMIE FORBES
                       {/* <span
                       className="txt-rotate"
                       // eslint-disable-next-line react/no-unknown-property
@@ -81,15 +81,12 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span> */}
                     </h1>
-                    <p>
-                      Contact me for your next eye-catching, responsive,
-                      accessible website!
-                    </p>
+                    <p>Fullstack Software Engineer</p>
 
                     <HashLink to="#connect">
                       <button>
                         <span>
-                          Let&lsquo;s Connect <ArrowRightCircle size={25} />
+                          HIRE ME! <ArrowRightCircle size={25} />
                         </span>
                       </button>
                     </HashLink>

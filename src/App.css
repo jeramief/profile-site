@@ -549,8 +549,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact img {
   width: 92%;
 }
+
+
 .contact h2 {
-	font-size: 45px;
+  font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
 }
@@ -611,6 +613,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+.email-me {
+  padding-top: 20px;
 }
 /******************************************/
 /* CONTACT

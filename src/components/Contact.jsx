@@ -77,6 +77,7 @@ export const Contact = () => {
                           <span>Send</span>
                         </button>
                       </Col>
+                      <p className="email-me">Email: forbejeramie@gmail.com</p>
                       {status.message && (
                         <Col>
                           <p

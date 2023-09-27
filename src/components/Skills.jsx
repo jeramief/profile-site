@@ -1,6 +1,3 @@
-import meter1 from "../assets/images/meter1.svg";
-import meter2 from "../assets/images/meter2.svg";
-import meter3 from "../assets/images/meter3.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/images/color-sharp.png";
@@ -34,10 +31,7 @@ export const Skills = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                I dedicate myself to presenting my clients with completed
-                projects that not only meet, but exceed, their initial vision.
-                Knowing what to expect when we work together is critical - here
-                is how I deliver success:
+                Here are a few fo the languages and tools I&#39;ve worked with.
               </p>
               <Carousel
                 responsive={responsive}
@@ -45,20 +39,33 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <h4>Front-end</h4>
+                  <hr />
+                  <h6>HTML</h6>
+                  <h6>CSS</h6>
+                  <h6>JavaScript</h6>
+                  <h6>React</h6>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Website Rebuild</h5>
+                  <h4>Back-end</h4>
+                  <hr />
+                  <h6>Node</h6>
+                  <h6>Python</h6>
+                  <h6>Express</h6>
+                  <h6>MongoDB</h6>
+                  <h6>SQL</h6>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <h4>Tools</h4>
+                  <hr />
+                  <h6>VS Code</h6>
+                  <h6>Git</h6>
+                  <h6>Bash</h6>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <h4>Soft skills</h4>
+                  <hr />
+                  <h6>Communication</h6>
                 </div>
               </Carousel>
             </div>
