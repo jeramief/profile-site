@@ -5,7 +5,6 @@ import colorSharp from "../assets/images/color-sharp.png";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -49,22 +48,31 @@ export const Skills = () => {
                 <div className="item">
                   <h4>Back-end</h4>
                   <hr />
-                  <h6>Node</h6>
                   <h6>Python</h6>
+                  <h6>Flask</h6>
+                  <h6>Node</h6>
                   <h6>Express</h6>
-                  <h6>MongoDB</h6>
+                </div>
+                <div className="item">
+                  <h4>Database</h4>
+                  <hr />
                   <h6>SQL</h6>
+                  <h6>SQLAchemy</h6>
+                  <h6>Sequelize</h6>
+                  <h6>PostgreSQL</h6>
+                  <h6>MongoDB</h6>
                 </div>
                 <div className="item">
                   <h4>Tools</h4>
                   <hr />
                   <h6>VS Code</h6>
-                  <h6>Git</h6>
+                  <h6>Github</h6>
                   <h6>Bash</h6>
                 </div>
                 <div className="item">
                   <h4>Soft skills</h4>
                   <hr />
+                  <h6>Problem Solving</h6>
                   <h6>Communication</h6>
                 </div>
               </Carousel>

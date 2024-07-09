@@ -1,5 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import wendigo from "../assets/images/wendigo.png";
+import fairshare from "../assets/images/fairshare.png";
 import shaystyles from "../assets/images/shaystyles.png";
 import dreamtowers from "../assets/images/dreamtowers.png";
 import thegalli from "../assets/images/thegalli.png";
@@ -11,6 +13,20 @@ import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
   const projects1 = [
+    {
+      link: "https://mechnewton.netlify.app/",
+      title: "Wendigo",
+      description: "Online used car dealership",
+      imgUrl: wendigo,
+    },
+    {
+      link: "https://fairshare-f8a7.onrender.com/",
+      title: "Fair$hare",
+      description: "Expense Spliting web app",
+      imgUrl: fairshare,
+    },
+  ];
+  const projects2 = [
     {
       link: "https://mechnewton.netlify.app/",
       title: "MechNewton",
@@ -32,6 +48,8 @@ export const Projects = () => {
         "Responsive and Accessible Construction Website. Built in HTML, CSS, JavaScript.",
       imgUrl: dreamtowers,
     },
+  ];
+  const projects3 = [
     {
       link: "https://shaystyles.netlify.app/",
       title: "Shay Styles Hair Salon",
@@ -47,8 +65,6 @@ export const Projects = () => {
       imgUrl: airquality,
     },
   ];
-  const projects2 = [];
-  const projects3 = [];
 
   return (
     <section className="project" id="projects">
