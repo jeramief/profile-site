@@ -16,13 +16,15 @@ export const Projects = () => {
     {
       link: "https://mechnewton.netlify.app/",
       title: "Wendigo",
-      description: "Online used car dealership",
+      description:
+        "Online used car dealership, built with Python/Flask on the backend, React.js on the frontend and PostgreSQL for the database.",
       imgUrl: wendigo,
     },
     {
       link: "https://fairshare-f8a7.onrender.com/",
       title: "Fair$hare",
-      description: "Expense Spliting web app",
+      description:
+        "Expense Spliting web app, built with Python/Flask on the backend, React.js on the frontend and PostgreSQL for the database.",
       imgUrl: fairshare,
     },
   ];
