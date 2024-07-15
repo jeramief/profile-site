@@ -31,7 +31,9 @@ export const Contact = () => {
                 >
                   <h2>Get In Touch</h2>
                   <form
-                    action="https://formsubmit.co/0cdd9d3b052dcf69da3f3c74f04716b0"
+                    // action="https://formsubmit.co/0cdd9d3b052dcf69da3f3c74f04716b0"
+                    // action="https://formsubmit.co/forbesdevelop@gmail.com"
+                    action="https://formspree.io/f/xeojogbk"
                     method="POST"
                   >
                     <Row>
