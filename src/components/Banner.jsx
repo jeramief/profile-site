@@ -81,7 +81,22 @@ export const Banner = () => {
                       <span className="wrap">{text}</span>
                     </span> */}
                     </h1>
-                    <p>Fullstack Software Engineer</p>
+                    <p>
+                      I transitioned from a technician role to a self-taught
+                      software engineer by embarking on a personal learning
+                      journey driven by my aspiration to make a positive impact
+                      on both people and the environment. Through dedicated
+                      self-study and hands-on projects, I acquired proficiency
+                      in software development methodologies, and the ability to
+                      create robust, scalable software solutions.I transitioned
+                      from a technician role to a self-taught software engineer
+                      by embarking on a personal learning journey driven by my
+                      aspiration to make a positive impact on both people and
+                      the environment. Through dedicated self-study and hands-on
+                      projects, I acquired proficiency in software development
+                      methodologies, and the ability to create robust, scalable
+                      software solutions.
+                    </p>
 
                     <HashLink to="#connect">
                       <button>
