@@ -2,18 +2,17 @@ import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 
 const SwitchLanguage = () => {
-  const { languageSelected, setLanguageSelected } = useContext(LanguageContext);
+  const { japaneseToggled, setJapaneseToggled } = useContext(LanguageContext);
 
   return (
     <div className="toggle-language">
       <label>
         <input
           type="checkbox"
-          name="languageSelected"
-          checked={languageSelected === "japanese"}
-          onChange={(e) =>
-            setLanguageSelected(e.target.checked ? "japanese" : "english")
-          }
+          name="japaneseToggled"
+          checked={japaneseToggled}
+          // onChange={setJapaneseToggled(!japaneseToggled)}
+          onChange={() => setJapaneseToggled(!japaneseToggled)}
         />
         日本語
       </label>

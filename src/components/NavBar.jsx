@@ -6,7 +6,7 @@ import GitHub from "../assets/images/github.svg";
 // import Twitter from "../assets/images/twitter.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
-// import Switch from "./Switch";
+import SwitchLanguage from "./SwitchLanguage";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -96,7 +96,8 @@ export const NavBar = () => {
                 </HashLink>
               </span>
             </Navbar.Collapse>
-            <input type="checkbox" onChange={() => setJapaneseToggled(false)} />
+            {/* <input type="checkbox" onChange={() => setJapaneseToggled(false)} /> */}
+            <SwitchLanguage />
             {/* </div> */}
           </Container>
         ) : (
@@ -161,10 +162,11 @@ export const NavBar = () => {
                 </HashLink>
               </span>
             </Navbar.Collapse>
-            <input type="checkbox" onChange={() => setJapaneseToggled(true)} />
+            {/* <input type="checkbox" onChange={() => setJapaneseToggled(true)} /> */}
             {/* </div> */}
           </Container>
         )}
+        {/* <SwitchLanguage /> */}
       </Navbar>
     </Router>
   );

@@ -3,10 +3,10 @@ import { createContext, useState } from "react";
 export const LanguageContext = createContext();
 
 export default function LanguageProvider(props) {
-  const [languageSelected, setLanguageSelected] = useState("english");
+  const [japaneseToggled, setJapaneseToggled] = useState(false);
 
   return (
-    <LanguageContext.Provider value={{ languageSelected, setLanguageSelected }}>
+    <LanguageContext.Provider value={{ japaneseToggled, setJapaneseToggled }}>
       {props.children}
     </LanguageContext.Provider>
   );
