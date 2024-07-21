@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguageContext } from "../context/LanguageContext";
+import { LanguageContext } from "../store/LanguageReducer";
 
 const SwitchLanguage = () => {
   const { japaneseToggled, setJapaneseToggled } = useContext(LanguageContext);
