@@ -1,16 +1,20 @@
-import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { thunkLanguage } from "../store/LanguageReducer";
+import { selectedLanguage } from "../store/LanguageReducer";
 
 const SwitchLanguage = () => {
   const dispatch = useDispatch();
 
-  const japaneseToggled = useSelector((state) => state.language);
+  const japaneseToggled = useSelector(
+    (state) => state.languageState.japaneseToggled
+  );
 
   const switchLanguage = () => {
-    if (japaneseToggled === true) dispatch(thunkLanguage(false));
-    else dispatch(thunkLanguage(false));
+    console.log({ japaneseToggled });
+
+    dispatch(selectedLanguage(!japaneseToggled));
+
+    console.log({ japaneseToggled });
   };
 
   return (
@@ -21,7 +25,6 @@ const SwitchLanguage = () => {
           name="japaneseToggled"
           checked={japaneseToggled}
           onChange={switchLanguage}
-          // onChange={() => setJapaneseToggled(!japaneseToggled)}
         />
         日本語
       </label>

@@ -1,24 +1,23 @@
 const SELECTED_LANGUAGE = "language/selectedLanguage";
 
-const selectedLanguage = (language) => ({
+export const selectedLanguage = (language) => ({
   type: SELECTED_LANGUAGE,
   language,
 });
 
-export const thunkLanguage = (language) => async (dispatch) => {
-  console.log(language);
-
-  return dispatch(selectedLanguage(language));
-};
-
-const initialState = {};
+const initialState = { japaneseToggled: false };
 
 const languageReducer = (state = initialState, action) => {
   switch (action.type) {
     case SELECTED_LANGUAGE: {
-      const newState = { ...state };
-      newState[action] = action.language;
-      return newState;
+      return {
+        ...state,
+        japaneseToggled: action.language,
+      };
+
+      // const newState = { ...state };
+      // newState[action.language] = action.language;
+      // return newState;
     }
     default: {
       return state;
