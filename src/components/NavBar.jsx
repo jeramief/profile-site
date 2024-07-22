@@ -7,11 +7,14 @@ import GitHub from "../assets/images/github.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import SwitchLanguage from "./SwitchLanguage";
+import { useSelector } from "react-redux";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
-  const [japaneseToggled, setJapaneseToggled] = useState(false);
+
+  const japaneseToggled = useSelector((state) => state.language);
+  console.log(japaneseToggled);
 
   useEffect(() => {
     const onScroll = () => {
@@ -97,7 +100,6 @@ export const NavBar = () => {
               </span>
             </Navbar.Collapse>
             {/* <input type="checkbox" onChange={() => setJapaneseToggled(false)} /> */}
-            <SwitchLanguage />
             {/* </div> */}
           </Container>
         ) : (
@@ -166,7 +168,7 @@ export const NavBar = () => {
             {/* </div> */}
           </Container>
         )}
-        {/* <SwitchLanguage /> */}
+        <SwitchLanguage />
       </Navbar>
     </Router>
   );

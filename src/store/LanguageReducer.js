@@ -6,6 +6,8 @@ const selectedLanguage = (language) => ({
 });
 
 export const thunkLanguage = (language) => async (dispatch) => {
+  console.log(language);
+
   return dispatch(selectedLanguage(language));
 };
 

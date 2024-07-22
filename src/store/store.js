@@ -9,7 +9,7 @@ import thunk from "redux-thunk";
 import languageReducer from "./LanguageReducer";
 
 const rootReducer = combineReducers({
-  languageReducer,
+  languageState: languageReducer,
 });
 
 let enhancer;
