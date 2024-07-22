@@ -13,7 +13,9 @@ export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
-  const japaneseToggled = useSelector((state) => state.languageState);
+  const japaneseToggled = useSelector(
+    (state) => state.languageState.japaneseToggled
+  );
   console.log(japaneseToggled);
 
   useEffect(() => {
