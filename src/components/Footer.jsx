@@ -24,7 +24,7 @@ export const Footer = () => {
                 <img src={Twitter} alt="Icon" />
               </a>
             </div>
-            <small>Copyright 2023. All Rights Reserved</small>
+            <small>2024 All Rights Reserved</small>
           </Col>
         </Row>
       </Container>
