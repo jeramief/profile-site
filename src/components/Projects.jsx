@@ -20,7 +20,7 @@ export const Projects = () => {
   const projects1 = {
     english: [
       {
-        link: "https://mechnewton.netlify.app/",
+        link: "https://wendigo.onrender.com/",
         title: "Wendigo",
         description:
           "Online used car dealership, built with Python/Flask on the backend, React.js on the frontend and PostgreSQL for the database.",
