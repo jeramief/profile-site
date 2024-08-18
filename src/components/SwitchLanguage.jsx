@@ -29,14 +29,6 @@ const SwitchLanguage = () => {
         style={{ background: japaneseToggled && "#675bcf" }}
       >
         <span className="japanese-toggle-button">日本語</span>
-        {/* <span
-          style={{
-            visibility: !japaneseToggled && "hidden",
-            fontSize: ".8em",
-          }}
-        >
-          {japaneseToggled ? "EN" : "日本語"}
-        </span> */}
       </label>
     </div>
   );

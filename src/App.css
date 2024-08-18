@@ -279,14 +279,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .japanese-toggle-label {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
-  width: 100px;
-  height: 50px;
   background: grey;
-  border-radius: 100px;
+  width: 60px;
+  height: 30px;
+  left: -25px;
+  border-radius: 50px;
   position: relative;
   transition: background-color 0.2s;
 }
@@ -300,9 +301,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 45px;
-  height: 45px;
-  border-radius: 45px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
   transition: 0.2s;
   background: #fff;
   box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
@@ -316,7 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .japanese-toggle-label:active .japanese-toggle-button {
-  width: 60px;
+  width: 40px;
 }
 
 .japanese-toggle-checkbox {
