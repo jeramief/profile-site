@@ -273,13 +273,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 /* SWITCH */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
 .toggle-language {
   display: flex;
   margin-left: 20px;
@@ -299,7 +292,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .japanese-toggle-label .japanese-toggle-button {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 2px;
   left: 2px;
@@ -327,7 +320,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 0;
   visibility: hidden;
 }
-
 /* SWITCH */
 /******************************************/
 /* NAVBAR

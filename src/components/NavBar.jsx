@@ -16,7 +16,6 @@ export const NavBar = () => {
   const japaneseToggled = useSelector(
     (state) => state.languageState.japaneseToggled
   );
-  console.log(japaneseToggled);
 
   useEffect(() => {
     const onScroll = () => {
