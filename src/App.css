@@ -317,6 +317,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: translateX(-100%);
 }
 
+.japanese-toggle-label:active .japanese-toggle-button {
+  width: 60px;
+}
+
 .japanese-toggle-checkbox {
   height: 0;
   width: 0;

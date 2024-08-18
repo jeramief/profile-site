@@ -19,15 +19,16 @@ const SwitchLanguage = () => {
 
   return (
     <div className="toggle-language">
-      <label className="japanese-toggle-label">
+      <input
+        id="japanese-toggle-switch"
+        className="japanese-toggle-checkbox"
+        type="checkbox"
+        name="japaneseToggled"
+        checked={japaneseToggled}
+        onChange={switchLanguage}
+      />
+      <label className="japanese-toggle-label" htmlFor="japanese-toggle-switch">
         <span className="japanese-toggle-button" />
-        <input
-          className="japanese-toggle-checkbox"
-          type="checkbox"
-          name="japaneseToggled"
-          checked={japaneseToggled}
-          onChange={switchLanguage}
-        />
         日本語
       </label>
     </div>
