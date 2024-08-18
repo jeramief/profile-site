@@ -19,8 +19,10 @@ const SwitchLanguage = () => {
 
   return (
     <div className="toggle-language">
-      <label>
+      <label className="japanese-toggle-label">
+        <span className="japanese-toggle-button" />
         <input
+          className="japanese-toggle-checkbox"
           type="checkbox"
           name="japaneseToggled"
           checked={japaneseToggled}
