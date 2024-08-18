@@ -10,11 +10,7 @@ const SwitchLanguage = () => {
   );
 
   const switchLanguage = () => {
-    console.log({ japaneseToggled });
-
     dispatch(selectedLanguage(!japaneseToggled));
-
-    console.log({ japaneseToggled });
   };
 
   return (
@@ -27,7 +23,11 @@ const SwitchLanguage = () => {
         checked={japaneseToggled}
         onChange={switchLanguage}
       />
-      <label className="japanese-toggle-label" htmlFor="japanese-toggle-switch">
+      <label
+        className="japanese-toggle-label"
+        htmlFor="japanese-toggle-switch"
+        style={{ background: japaneseToggled && "#06D6A0" }}
+      >
         <span className="japanese-toggle-button" />
         日本語
       </label>
