@@ -275,7 +275,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* SWITCH */
 .toggle-language {
   display: flex;
-  margin-left: 20px;
 }
 
 .japanese-toggle-label {
@@ -778,6 +777,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   main .container {
     max-width: 100%;
     padding: 0 150px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .toggle-language {
+    margin-left: 50%;
   }
 }
 
